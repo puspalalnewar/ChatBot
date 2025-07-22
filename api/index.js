@@ -11,7 +11,7 @@ app.use(express.static("public"));
 // Enable Cors
 app.use(cors());
 
-app.use('/api', require('./routes/index'));
+app.use('/api', require('../routes/index'));
 
 app.listen(PORT, () => {
   console.log(`Server running in PORT ${PORT}`);
